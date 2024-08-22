@@ -1,0 +1,532 @@
+@font-face {
+    font-family: RalewayLight;
+    src: url("../fonts/static/Raleway-Light.ttf");
+}
+@font-face {
+    font-family: RalewayBold;
+    src: url("../fonts/static/Raleway-Bold.ttf");
+}
+/*------------------------------- NAV BAR -----------------------------------------*/
+.navbar-nav {
+    margin-left: auto;
+}
+/*nav bar green icon*/
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url("../icons/icons8-menu-480.png");
+}
+/*nav bar color*/
+.navbarStyle{
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(255,0,0,0));
+}
+.navbarScrolled{
+    background-color: black;
+}
+.navbar-nav li a {
+    color: white;
+}
+.navbar-nav li a:hover {
+    color: #26e07f;
+}
+.navbar-brand{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+    font-family: RalewayBold;
+}
+.navbar-brand:hover{
+    color: #26e07f !important;
+}
+.navbar-sub-brand{
+    color: #26e07f;
+    font-size: 30px
+}
+.navbar-brand:hover .navbar-sub-brand{
+    color: white;
+    font-size: 30px
+}
+/*----------------------------------------BACKGROUNDS-------------------------------------*/
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.box{
+    width: 100%;
+    height: 600px;
+    padding: 60px 60px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.homeSection{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#myVideo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -10;
+}
+.blackDiv{
+    position:absolute;
+    width:  100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+
+.aboutUsSection{
+
+    background: white;
+    height: 100vh;
+}
+
+.customersSection{
+    background-image: url("../images/customerbg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.downloadSection{
+    background: #f2f3f5;
+    height: 100vh;
+    overflow: hidden;
+}
+.TeamSection{
+    background-image: url("../images/pexels-pixabay-434337.png");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.ContactUsSection{
+    background: rgb(12, 11, 11);
+    height: 100vh;
+}
+/*------------------------------------CONTENT-------------------------------------*/
+.homeContent{
+    width:  100%;
+    height: calc(100vh - 40px);
+}
+.homeContent H1{
+    color: #26e07f;
+    font-size: 50px;
+    font-family: RalewayBold;
+
+}
+.homeContent p{
+    color: white;
+    font-size: 30px;
+    font-family: RalewayLight;
+}
+.aboutUsContent{
+    background-color: white;
+    margin: 80px;
+}
+.aboutUsContent .row .col-sm-6 h1{
+    color:#26e07f;
+    font-size: 40px;
+    padding: 20px;
+    font-family: RalewayLight;
+}
+.aboutUsContent .row .col-sm-6 p{
+    color:#757575;
+    font-size: 22px;
+    padding: 5px;
+}
+.foodImages:hover{
+    border: #26e07f solid 2px;
+    box-shadow: 0 0 20px #26e07f;
+    transform: scale(1.03);
+}
+.fImage1{
+    width: 300px;
+    max-width: 100%;
+    height: 500px;
+}
+.fImage2{
+    width: 300px;
+    max-width: 100%;
+    height: 248px;
+}
+.customersContent{
+    margin: 80px;
+}
+.customerReview{
+    border-radius: 5px;
+    background-color: white;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 0 0 20px black;
+    padding:30px 10px 30px 10px;
+}
+.customerReview:hover{
+    box-shadow: 0 0 10px #26e07f;
+}
+.customerReview div{
+    height:300px ;
+    padding: 20px;
+}
+.customerReview div img{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.customerReview div h5{
+    margin-top: 30px;
+     color: #26e07f;
+ }
+ .customerReview p{
+    color: #757575;
+    font-size: 20px;
+    height: auto;
+}
+.customerReview p span{
+    color: #26e07f;
+    font-size: 30px;
+}
+.buttonTransparent{
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+.buttonTransparent:hover{
+    color: #26e07f;
+}
+.buttonBorderd{
+    margin: 20px;
+    cursor: pointer;
+    color:  #26e07f;
+    border:  #26e07f solid 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+}
+.buttonBorderd:hover{
+    background-color: #26e07f;
+    color: white;
+}
+.buttonBorderd:active{
+    background-color: #46F298;
+}
+.downloadContent{
+    margin: 60px;
+}
+.phoneImage{
+    position: relative;
+    top: 0;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+}
+.downloadSection .row .col-md-6 h1{
+    color:#26e07f;
+    font-size: 40px;
+    padding: 20px;
+    font-family: RalewayBold;
+}
+.downloadSection .row .col-md-6 p{
+    color:#757575;
+    font-size: 22px;
+    padding: 5px;
+}
+.downloadSection .row .col-md-6 .buttonBorderd{
+    width: 50%;
+    border-radius: 50px;
+}
+.TeamContent{
+    margin: 60px;
+}
+.teamMember{
+    background-color: white;
+    border-radius: 20px;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 10px black;
+    padding:30px 10px 30px 10px;
+    margin-top: 10px;
+}
+.grayButton {
+    margin-top: 30px;
+    cursor: pointer;
+    color: gray;
+    background-color: transparent;
+    height: 50px;
+    border: none;
+}
+.teamMember img{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px black;
+}
+.teamMember img:hover{
+    box-shadow: 0 0 10px #26e07f;
+}
+.teamMember .memInfo{
+    margin-top: 40px;
+    padding: 30px;
+
+}
+.teamMember .memInfo h3{
+    color: #26e07f;
+}
+.teamMember .memInfo h7{
+    color: gray;
+}
+.teamMember .memSocialR{
+    right: 50px;
+    padding: 5px;
+    margin-top: 15px;
+    height: 100px;
+    position: absolute;
+    top:10px;
+
+}
+.teamMember .memSocialL{
+    left: 80px;
+    padding: 5px;
+    margin-top: 15px;
+    height: 100px;
+    position: absolute;
+    top:10px;
+
+}
+.mem1Icon{
+    display: none;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 30px 30px;
+    border: none;
+    background-position: center;
+    border-radius: 100%;
+    /*display: block;*/
+}
+.mem2Icon{
+    display: none;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 30px 30px;
+    border: none;
+    background-position: center;
+    border-radius: 100%;
+    /*display: block;*/
+}
+.mem1Icon:hover{transform: scale(1.1);}
+.mem2Icon:hover{transform: scale(1.1);}
+#facebookIconMem1{
+    background-image: url("../icons/facebook.png"); 
+    animation-name: Animation1;
+    animation-duration: 0.5s;
+}
+#instagramIconMem1{
+    background-image: url("../icons/instagram.png");
+    margin-left: -30px;    
+}
+#twitterIconMem1{
+    background-image: url("../icons/twitter.png");
+    margin-left: -30px;
+}
+#siteIconMem1{
+    background-image: url("../icons/site.png");
+}
+@keyframes Animation1{
+    from{
+        margin-left: 30px;
+        margin-bottom: -30px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        margin-bottom: 10px;
+        opacity: 1;
+    }
+}
+#facebookIconMem2{
+    background-image: url("../icons/facebook.png"); 
+    animation-name: Animation2;
+    animation-duration: 0.5s;
+}
+#instagramIconMem2{
+    background-image: url("../icons/instagram.png");
+    margin-left: 30px;    
+}
+#twitterIconMem2{
+    background-image: url("../icons/twitter.png");
+    margin-left: 30px;    
+}
+#siteIconMem2{
+    background-image: url("../icons/site.png");
+}
+@keyframes Animation2{
+    from{
+        margin-left: -30px;
+        margin-bottom: -30px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        margin-bottom: 10px;
+        opacity: 1;
+    }
+}
+.ContactUsContent{
+    margin-top: 30px;
+}
+.greenShadow{
+    box-shadow: 0 0 10px #26e07f;
+}
+.buttonBorderdToggle{
+    margin: 20px;
+    cursor: pointer;
+    color:  white;
+    border:  white solid 2px;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 50%;
+    height: 50px;
+
+}
+.buttonBorderdToggle:hover {
+    background-color: white;
+    color: black;
+}
+.buttonBorderdToggle:active{
+    background-color: #F0F0F0;
+}
+.ContactUsContent .row .col-md-6 form table{
+    width: 100%;
+}
+.ContactUsContent .row .col-md-6 form table tr td label{
+    color: white;
+    font-family: RalewayLight;
+    font-size: 30px;
+    padding:10px;
+}
+.ContactUsContent .row .col-md-6 form table tr td{
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.textField{
+    border: none;
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    padding-left: 10px;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 5px;
+    display: block;
+    background-color: #F2F2F2;
+    padding: 5px;
+}
+.textField:focus{
+    outline: none;
+}
+.line {
+    height: 2px;
+    width: 0px;
+    background-color: #26e07f;
+    display: inline-block;
+    transition: 0.5s width ease-in-out;
+    position: relative;
+    top: -1px;
+    z-index: 3;
+}
+.textField:focus+.line{
+    width: 99%;
+}
+.textArea{
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #F2F2F2;
+}
+.textArea:focus{
+    outline: none;
+}
+.errorMenuItem{
+    position: absolute;
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.errorMenuItem2 .row{
+
+}
+.errorMenuItemContent{
+
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 20px black;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.errorTextField{
+    border: none;
+    background-color: transparent;
+    color: red;
+    padding:5px;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+.blackSquaredButton{
+    background-color: transparent;
+    border: black solid 1px;
+    color: black;
+    width: 80px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.blackSquaredButton:hover{
+    background-color: #26E07F;
+    color: black;
+}
+.blackSquaredButton:active{
+    background-color: #46F298;
+}
+.contactUsTable tr >td{
+    padding-bottom: 20px;
+}
